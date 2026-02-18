@@ -1,11 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Details</title>
-</head>
-<body>
-    <h1>Welcome to the Contact Details Section</h1>
-</body>
+<!doctype html>
+<html>
+  <head>
+    <title>Animation Properties</title>
+
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+
+        animation-name: moveBox;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes moveBox {
+        from {
+          left: 0px;
+        }
+
+        to {
+          left: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
 </html>
